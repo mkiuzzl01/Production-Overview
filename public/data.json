@@ -1,28 +1,25 @@
 [
   {
-    "metrics": {
-      "totalUnitsProduced": 15000,
-      "defectRate": 2.5,
-      "efficiencyPercentage": 89
-    },
+    "metrics": [
+      { "name":"totalUnitsProduced","value":80 },
+      { "name":"defectRate","value":30.5 },
+      { "name":"efficiencyPercentage","value": 59 }
+    ],
     "productionLines": [
       {
         "lineId": 1,
-        "name": "Line A",
         "status": "Active",
         "currentOrder": "Order #1023",
         "completionPercentage": 75
       },
       {
         "lineId": 2,
-        "name": "Line B",
         "status": "Paused",
         "currentOrder": "Order #1021",
         "completionPercentage": 45
       },
       {
         "lineId": 3,
-        "name": "Line C",
         "status": "Completed",
         "currentOrder": "Order #1019",
         "completionPercentage": 100
