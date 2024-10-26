@@ -6,10 +6,10 @@ const Root = () => {
   return (
     <div>
       <div className="flex justify-between">
-        <nav className="w-3/12">
+        <nav className="w-1/5">
           <Sidebar></Sidebar>
         </nav>
-        <main className="w-3/4">
+        <main className="w-4/5">
           <Outlet></Outlet>
         </main>
       </div>

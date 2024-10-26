@@ -14,21 +14,16 @@ import {
 import useProducts from "../../lib/useProducts";
 
 const BarChart = () => {
-  const {productionLines} = useProducts();
+  const { productionLines } = useProducts();
 
   return (
-    <div className="pt-10">
-        <h1 className="">Production Line Status Overview</h1>
+    <div className="border-2 rounded-lg w-full m-5 p-5">
+      <h1 className="">Production Line Status Overview</h1>
       <ComposedChart
         width={500}
-        height={400}
+        height={310}
         data={productionLines}
-        margin={{
-          top: 40,
-          right: 80,
-          bottom: 20,
-          left: 20,
-        }}
+        margin={{}}
       >
         <CartesianGrid stroke="#f5f5f5" />
         <XAxis
@@ -40,7 +35,7 @@ const BarChart = () => {
           label={{ value: "Progress", angle: -90, position: "insideLeft" }}
         />
         <Tooltip />
-        <Legend  />
+        <Legend />
         <Area
           type="monotone"
           dataKey="currentOrder"
@@ -48,7 +43,7 @@ const BarChart = () => {
           stroke="#488"
         />
         <Bar dataKey="completionPercentage" barSize={20} fill="#413ea0" />
-        <Line type="monotone" dataKey="completionPercentage"  stroke="#ff7300" />
+        <Line type="monotone" dataKey="completionPercentage" stroke="#ff7300" />
       </ComposedChart>
     </div>
   );

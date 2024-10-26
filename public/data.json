@@ -1,9 +1,9 @@
 [
   {
     "metrics": [
-      { "name":"totalUnitsProduced","value":80 },
-      { "name":"defectRate","value":30.5 },
-      { "name":"efficiencyPercentage","value": 59 }
+      { "name":"Total Units Produced","value":80 },
+      { "name":"Defect Rate","value":30.5 },
+      { "name":"Efficiency Percentage","value": 59 }
     ],
     "productionLines": [
       {

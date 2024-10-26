@@ -5,23 +5,15 @@ const Sidebar = () => {
   const navLink = (
     <>
       <li>
-        <NavLink to='/'>Production Overview</NavLink>
-      </li>
-      <li>
-        {" "}
-        <NavLink to='/Products_Status'>Products Status</NavLink>
-      </li>
-      <li>
-        <NavLink to='/orders'>Order List</NavLink>
-      </li>
-      <li>
-        <NavLink to="/ActivityLog">Activity Log</NavLink>
+        <NavLink to="/">Production Overview</NavLink>
       </li>
     </>
   );
   return (
-    <div className="bg-slate-500 min-h-screen">
-      <div></div>
+    <div className="bg-slate-500 h-screen p-5">
+      <div className="text-center py-5">
+        <h1 className="text-2xl font-bold text-yellow-300">Excellent Choice</h1>
+      </div>
       <div>
         <ul className="space-y-2">{navLink}</ul>
       </div>
