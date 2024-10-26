@@ -33,7 +33,7 @@ const useProducts = () => {
     getData();
   },[]);
 
-  return [metrics, productionLines, orders, recentActivities];
+  return {metrics, productionLines, orders, recentActivities};
 };
 
 export default useProducts;

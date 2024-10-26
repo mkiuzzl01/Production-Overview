@@ -5,17 +5,17 @@ const Sidebar = () => {
   const navLink = (
     <>
       <li>
-        <NavLink>Production Overview</NavLink>
+        <NavLink to='/'>Production Overview</NavLink>
       </li>
       <li>
         {" "}
-        <NavLink>Products Status</NavLink>
+        <NavLink to='/Products_Status'>Products Status</NavLink>
       </li>
       <li>
-        <NavLink>Order List</NavLink>
+        <NavLink to='/orders'>Order List</NavLink>
       </li>
       <li>
-        <NavLink>Activity Log</NavLink>
+        <NavLink to="/ActivityLog">Activity Log</NavLink>
       </li>
     </>
   );

@@ -10,7 +10,7 @@ import {
 import useProducts from "../../lib/useProducts";
 
 const PiChart = () => {
-  const [metrics] = useProducts();
+  const {metrics} = useProducts();
 
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 

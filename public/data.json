@@ -31,7 +31,7 @@
         "productName": "Men's T-Shirt",
         "deadline": "2024-11-05",
         "quantity": 500,
-        "completionPercentage": 75,
+        "completion": 75,
         "status": "In Progress"
       },
       {
@@ -39,7 +39,7 @@
         "productName": "Women's Jeans",
         "deadline": "2024-11-10",
         "quantity": 300,
-        "completionPercentage": 45,
+        "completion": 45,
         "status": "Paused"
       },
       {
@@ -47,10 +47,11 @@
         "productName": "Children's Jacket",
         "deadline": "2024-10-22",
         "quantity": 150,
-        "completionPercentage": 100,
+        "completion": 100,
         "status": "Completed"
       }
     ],
+    
     "recentActivities": [
       {
         "activityId": 1,

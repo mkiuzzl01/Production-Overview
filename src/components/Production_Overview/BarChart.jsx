@@ -14,7 +14,7 @@ import {
 import useProducts from "../../lib/useProducts";
 
 const BarChart = () => {
-  const [, productionLines] = useProducts();
+  const {productionLines} = useProducts();
 
   return (
     <div className="pt-10">
@@ -24,7 +24,7 @@ const BarChart = () => {
         height={400}
         data={productionLines}
         margin={{
-          top: 20,
+          top: 40,
           right: 80,
           bottom: 20,
           left: 20,
@@ -45,10 +45,10 @@ const BarChart = () => {
           type="monotone"
           dataKey="currentOrder"
           fill="#8884d8"
-          stroke="#8884d8"
+          stroke="#488"
         />
         <Bar dataKey="completionPercentage" barSize={20} fill="#413ea0" />
-        <Line type="monotone" dataKey="completionPercentage" stroke="#ff7300" />
+        <Line type="monotone" dataKey="completionPercentage"  stroke="#ff7300" />
       </ComposedChart>
     </div>
   );
