@@ -1,0 +1,75 @@
+[
+  {
+    "metrics": {
+      "totalUnitsProduced": 15000,
+      "defectRate": 2.5,
+      "efficiencyPercentage": 89
+    },
+    "productionLines": [
+      {
+        "lineId": 1,
+        "name": "Line A",
+        "status": "Active",
+        "currentOrder": "Order #1023",
+        "completionPercentage": 75
+      },
+      {
+        "lineId": 2,
+        "name": "Line B",
+        "status": "Paused",
+        "currentOrder": "Order #1021",
+        "completionPercentage": 45
+      },
+      {
+        "lineId": 3,
+        "name": "Line C",
+        "status": "Completed",
+        "currentOrder": "Order #1019",
+        "completionPercentage": 100
+      }
+    ],
+    "orders": [
+      {
+        "orderId": "1023",
+        "productName": "Men's T-Shirt",
+        "deadline": "2024-11-05",
+        "quantity": 500,
+        "completionPercentage": 75,
+        "status": "In Progress"
+      },
+      {
+        "orderId": "1021",
+        "productName": "Women's Jeans",
+        "deadline": "2024-11-10",
+        "quantity": 300,
+        "completionPercentage": 45,
+        "status": "Paused"
+      },
+      {
+        "orderId": "1019",
+        "productName": "Children's Jacket",
+        "deadline": "2024-10-22",
+        "quantity": 150,
+        "completionPercentage": 100,
+        "status": "Completed"
+      }
+    ],
+    "recentActivities": [
+      {
+        "activityId": 1,
+        "description": "Order #1023 started on Line A",
+        "timestamp": "2024-10-25 10:00"
+      },
+      {
+        "activityId": 2,
+        "description": "Line B paused due to maintenance",
+        "timestamp": "2024-10-25 09:30"
+      },
+      {
+        "activityId": 3,
+        "description": "Order #1019 completed on Line C",
+        "timestamp": "2024-10-24 15:45"
+      }
+    ]
+  }
+]
