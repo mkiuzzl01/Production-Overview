@@ -5,7 +5,7 @@ import { FaArrowTrendDown } from "react-icons/fa6";
 const Quantity = () => {
   const { quantity } = useProductions();
 
-  console.log(quantity);
+  // console.log(quantity);
   return (
     <div className="flex flex-col gap-3">
       {quantity?.map((item, idx) => (

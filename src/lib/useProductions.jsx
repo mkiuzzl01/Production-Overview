@@ -6,8 +6,8 @@ const useProductions = () => {
   const [productCycle, setProductCycle] = useState([]);
   const [costAnalysis, setCostAnalysis] = useState([]);
   const [quantity, setQuantity] = useState([]);
-  const [reworkQuantity, setReworkQuantity] = useState({});
   const [metrics, setMetrics] = useState([]);
+  const [orders, setOrders] = useState([]);
 
   //get all products data
   const getData = async () => {
@@ -20,7 +20,8 @@ const useProductions = () => {
       setProductCycle(data.productCycle || []);
       setCostAnalysis(data.costAnalysis || []);
       setQuantity(data.quantity || {});
-      setMetrics(data.metrics || {});
+      setMetrics(data.activities || {});
+      setOrders(data.orders || {});
     } catch (error) {
       setError(error.message);
     } finally {
@@ -37,6 +38,7 @@ const useProductions = () => {
     costAnalysis,
     quantity,
     metrics,
+    orders,
     loading,
     error,
   };

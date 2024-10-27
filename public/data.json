@@ -107,11 +107,18 @@
         "lastMonth": 30470
       }
     ],
-    "metrics": {
-      "availability": 96.24,
-      "performance": 93.12,
-      "quality": 97.46,
-      "overallEquipmentEffectiveness": 87.35
-    }
+
+    "activities": [
+     { "type":"availability","value":55.24},
+     { "type":"performance","value":70.12},
+     { "type":"quality","value":94.46},
+     { "type":"overallEquipmentEffectiveness","value":87.35}
+    ],
+    "orders":[
+      {"type":"running", "value": 67.5},
+      {"type":"pending", "value": 47.5},
+      {"type":"cancel", "value": 30.5},
+      {"type":"rejected", "value": 10.5}
+    ]
   }
 ]

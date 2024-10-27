@@ -2,6 +2,8 @@ import React from "react";
 import ProductCycle from "../productCycle/productCycle";
 import CostAnalysis from "../CostAnalysis/CostAnalysis";
 import Quantity from "../quantity/Quantity";
+import Activities from "../Activities/Activities";
+import TotalOrders from "../Orders/TotalOrders";
 
 const Production_Overview = () => {
   return (
@@ -17,7 +19,8 @@ const Production_Overview = () => {
           <ProductCycle></ProductCycle>
         </div>
         <div className="col-span-2">
-
+          <Activities></Activities>
+          <TotalOrders></TotalOrders>
         </div>
         <div>
           <Quantity></Quantity>
