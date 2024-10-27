@@ -93,16 +93,20 @@
         }
       ]
     },
-    "quantityProduced": {
-      "percentageChange": -43.26,
-      "currentMonth": 228855,
-      "lastMonth": 355170
-    },
-    "reworkQuantity": {
-      "percentageChange": -49.72,
-      "currentMonth": 18336,
-      "lastMonth": 30470
-    },
+    "quantity": [
+      {
+        "type": "Quantity Produced",
+        "percentageChange": -43.26,
+        "currentMonth": 228855,
+        "lastMonth": 355170
+      },
+      {
+        "type": "Quantity Rework",
+        "percentageChange": -49.72,
+        "currentMonth": 18336,
+        "lastMonth": 30470
+      }
+    ],
     "metrics": {
       "availability": 96.24,
       "performance": 93.12,

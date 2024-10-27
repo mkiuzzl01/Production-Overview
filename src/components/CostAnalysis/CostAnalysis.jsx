@@ -4,7 +4,7 @@ import {
   Area,
   AreaChart,
   CartesianGrid,
-  Label,
+  Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -13,14 +13,12 @@ import {
 
 const CostAnalysis = () => {
   const { costAnalysis } = useProductions();
-  const data = costAnalysis?.find((item) => item.items);
-  console.log(data?.items);
-
+  
   return (
     <div className="w-full h-80">
       <ResponsiveContainer>
         <AreaChart
-          data={data?.items}
+          data={costAnalysis?.items}
           margin={{
             top: 10,
             right: 30,
@@ -32,6 +30,7 @@ const CostAnalysis = () => {
           <XAxis dataKey="month" />
           <YAxis />
           <Tooltip />
+          <Legend align="center"  />
           <Area
             type="monotone"
             dataKey="laborCost"
@@ -53,6 +52,7 @@ const CostAnalysis = () => {
             stroke="#ffc658"
             fill="#ffc658"
           />
+          
         </AreaChart>
       </ResponsiveContainer>
     </div>

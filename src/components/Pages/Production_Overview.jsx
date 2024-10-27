@@ -1,6 +1,7 @@
 import React from "react";
 import ProductCycle from "../productCycle/productCycle";
 import CostAnalysis from "../CostAnalysis/CostAnalysis";
+import Quantity from "../quantity/Quantity";
 
 const Production_Overview = () => {
   return (
@@ -11,8 +12,16 @@ const Production_Overview = () => {
       <div>
         <CostAnalysis></CostAnalysis>
       </div>
-      <div className="grid grid-cols-3 gap-2">
-        <ProductCycle></ProductCycle>
+      <div className="grid grid-cols-4">
+        <div>
+          <ProductCycle></ProductCycle>
+        </div>
+        <div className="col-span-2">
+
+        </div>
+        <div>
+          <Quantity></Quantity>
+        </div>
       </div>
       <div></div>
     </div>

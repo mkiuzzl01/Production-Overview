@@ -1,40 +1,45 @@
 import { useLayoutEffect, useState } from "react";
-import Loading from "../util/Loading";
 
 const useProductions = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
   const [productCycle, setProductCycle] = useState([]);
   const [costAnalysis, setCostAnalysis] = useState([]);
-  const [quantityProduced, setQuantityProduced] = useState([]);
+  const [quantity, setQuantity] = useState([]);
+  const [reworkQuantity, setReworkQuantity] = useState({});
   const [metrics, setMetrics] = useState([]);
 
   //get all products data
   const getData = async () => {
-    setLoading(true);
-    const data = await fetch("data.json");
-    const res = await data.json();
-    setLoading(false);
+    try {
+      const response = await fetch("data.json");
+      if (!response.ok) throw Error("Field to fetch data");
+      const [data] = await response.json();
 
-    const cycle = res.flatMap((item) => item.productCycle);
-    setProductCycle(cycle);
-
-    const cost = res.flatMap((item) => item.costAnalysis);
-    setCostAnalysis(cost);
-
-    const quantity = res.flatMap((item) => item.quantityProduced);
-    setQuantityProduced(quantity);
-
-    const performance = res.flatMap((item) => item.metrics);
-    setMetrics(performance);
+      //extract to production data from the JSON file;
+      setProductCycle(data.productCycle || []);
+      setCostAnalysis(data.costAnalysis || []);
+      setQuantity(data.quantity || {});
+      setMetrics(data.metrics || {});
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
   };
 
   useLayoutEffect(() => {
     getData();
   }, []);
 
-  if (loading) return <Loading></Loading>;
-  
-  return { productCycle, costAnalysis, quantityProduced, metrics };
+  return {
+    productCycle,
+    costAnalysis,
+    quantity,
+    metrics,
+    loading,
+    error,
+  };
 };
 
 export default useProductions;
