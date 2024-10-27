@@ -1,73 +1,109 @@
 [
   {
-    "metrics": [
-      { "name":"Total Units Produced","value":80 },
-      { "name":"Defect Rate","value":30.5 },
-      { "name":"Efficiency Percentage","value": 59 }
-    ],
-    "productionLines": [
-      {
-        "lineId": 1,
-        "status": "Active",
-        "currentOrder": "Order #1023",
-        "completionPercentage": 75
-      },
-      {
-        "lineId": 2,
-        "status": "Paused",
-        "currentOrder": "Order #1021",
-        "completionPercentage": 45
-      },
-      {
-        "lineId": 3,
-        "status": "Completed",
-        "currentOrder": "Order #1019",
-        "completionPercentage": 100
-      }
-    ],
-    "orders": [
-      {
-        "orderId": "1023",
-        "productName": "Men's T-Shirt",
-        "deadline": "2024-11-05",
-        "quantity": 500,
-        "completion": 75,
-        "status": "In Progress"
-      },
-      {
-        "orderId": "1021",
-        "productName": "Women's Jeans",
-        "deadline": "2024-11-10",
-        "quantity": 300,
-        "completion": 45,
-        "status": "Paused"
-      },
-      {
-        "orderId": "1019",
-        "productName": "Children's Jacket",
-        "deadline": "2024-10-22",
-        "quantity": 150,
-        "completion": 100,
-        "status": "Completed"
-      }
-    ],
-    
-    "recentActivities": [
-      {
-        "activityId": 1,
-        "description": "Order #1023 started on Line A",
-        "timestamp": "2024-10-25 10:00"
-      },
-      {
-        "activityId": 2,
-        "description": "Line B paused due to maintenance",
-        "timestamp": "2024-10-25 09:30"
-      },
-      {
-        "activityId": 3,
-        "description": "Order #1019 completed on Line C",
-        "timestamp": "2024-10-24 15:45"
-      }
-    ]
+    "product": "All",
+    "cycleTime": {
+      "value": 8.57,
+      "unit": "mins"
+    },
+    "yield": {
+      "percentage": 99.58
+    },
+    "throughput": {
+      "value": 2176,
+      "unit": "units/hour"
+    },
+    "costAnalysis": {
+      "timePeriod": "Last 12 Months",
+      "data": [
+        {
+          "month": "Nov 2022",
+          "productionCost": 20.01,
+          "manufacturingCost": 37.53,
+          "laborCost": 20.01
+        },
+        {
+          "month": "Dec 2022",
+          "productionCost": 89.43,
+          "manufacturingCost": 108.33,
+          "laborCost": 24.79
+        },
+        {
+          "month": "Jan 2023",
+          "productionCost": 109.44,
+          "manufacturingCost": 131.91,
+          "laborCost": 25.68
+        },
+        {
+          "month": "Feb 2023",
+          "productionCost": 156.32,
+          "manufacturingCost": 140.64,
+          "laborCost": 25.68
+        },
+        {
+          "month": "Mar 2023",
+          "productionCost": 193.84,
+          "manufacturingCost": 178.55,
+          "laborCost": 26.13
+        },
+        {
+          "month": "Apr 2023",
+          "productionCost": 121.4,
+          "manufacturingCost": 97.91,
+          "laborCost": 26.13
+        },
+        {
+          "month": "May 2023",
+          "productionCost": 140.64,
+          "manufacturingCost": 97.91,
+          "laborCost": 26.13
+        },
+        {
+          "month": "Jun 2023",
+          "productionCost": 147.01,
+          "manufacturingCost": 120.88,
+          "laborCost": 28.26
+        },
+        {
+          "month": "Jul 2023",
+          "productionCost": 165.39,
+          "manufacturingCost": 121.4,
+          "laborCost": 24.79
+        },
+        {
+          "month": "Aug 2023",
+          "productionCost": 144.35,
+          "manufacturingCost": 120.88,
+          "laborCost": 28.26
+        },
+        {
+          "month": "Sep 2023",
+          "productionCost": 116.1,
+          "manufacturingCost": 120.88,
+          "laborCost": 26.13
+        },
+        {
+          "month": "Oct 2023",
+          "productionCost": 110.35,
+          "manufacturingCost": 116.1,
+          "laborCost": 28.26
+        }
+      ]
+    },
+    "quantityProduced": {
+      "percentageChange": -43.26,
+      "currentMonth": 228855,
+      "lastMonth": 355170
+    },
+    "reworkQuantity": {
+      "percentageChange": -49.72,
+      "currentMonth": 18336,
+      "lastMonth": 30470
+    },
+    "metrics": {
+      "availability": 96.24,
+      "performance": 93.12,
+      "quality": 97.46,
+      "overallEquipmentEffectiveness": 87.35
+    }
   }
 ]
