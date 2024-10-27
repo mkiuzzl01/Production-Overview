@@ -9,13 +9,13 @@ const TotalOrders = () => {
 
   const RADIAN = Math.PI / 180;
 
-  const cx = 150;
-  const cy = 200;
+  const cx = 300;
+  const cy = 110;
   const iR = 50;
   const oR = 100;
   const value = 50;
 
-  const COLORS = ["#243642", "#387478", "#629584", "#CB6040"];
+  const COLORS = ["#A594F9", "#387478", "#629584", "#CB6040"];
 
   const needle = (value, data, cx, cy, iR, oR, COLORS) => {
     let total = 0;
@@ -47,7 +47,7 @@ const TotalOrders = () => {
   };
 
   return (
-    <div className="w-full h-60">
+    <div className="w-full h-40">
       <ResponsiveContainer>
         <PieChart>
           <Pie

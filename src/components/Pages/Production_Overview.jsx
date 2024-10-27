@@ -7,9 +7,9 @@ import TotalOrders from "../Orders/TotalOrders";
 
 const Production_Overview = () => {
   return (
-    <div>
-      <div className="pt-10">
-        <h1 className="text-center">All Overview of the Production</h1>
+    <div className="p-5 bg-[#001F3F]">
+      <div className="">
+        <h1 className="text-center text-white">All Overview of the Production</h1>
       </div>
       <div>
         <CostAnalysis></CostAnalysis>
@@ -19,8 +19,8 @@ const Production_Overview = () => {
           <ProductCycle></ProductCycle>
         </div>
         <div className="col-span-2">
-          <Activities></Activities>
           <TotalOrders></TotalOrders>
+          <Activities></Activities>
         </div>
         <div>
           <Quantity></Quantity>

@@ -10,27 +10,22 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import Loading from "../../util/Loading";
 
 const CostAnalysis = () => {
-  const { costAnalysis } = useProductions();
-  
+  const { costAnalysis, loading } = useProductions();
+
+  if (loading) return <Loading></Loading>;
+
   return (
-    <div className="w-full h-80">
+    <div className="w-full  h-[257px] shadow-lg shadow-[#3A6D8C] rounded-md p-2 mb-2">
       <ResponsiveContainer>
-        <AreaChart
-          data={costAnalysis?.items}
-          margin={{
-            top: 10,
-            right: 30,
-            left: 0,
-            bottom: 0,
-          }}
-        >
+        <AreaChart data={costAnalysis?.items} margin={{}}>
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="month" />
-          <YAxis />
+          <XAxis dataKey="month" stroke="#ffff" />
+          <YAxis stroke="#ffff" />
           <Tooltip />
-          <Legend align="center"  />
+          <Legend align="center" />
           <Area
             type="monotone"
             dataKey="laborCost"
@@ -52,7 +47,6 @@ const CostAnalysis = () => {
             stroke="#ffc658"
             fill="#ffc658"
           />
-          
         </AreaChart>
       </ResponsiveContainer>
     </div>

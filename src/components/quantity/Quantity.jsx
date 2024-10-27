@@ -7,10 +7,10 @@ const Quantity = () => {
 
   // console.log(quantity);
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-3 mt-5">
       {quantity?.map((item, idx) => (
-        <div className="bg-gray-400 text-center p-5" key={idx}>
-          <h1 className="text-2xl font-bold flex items-center justify-center gap-2"> <FaArrowTrendDown className="text-red-700"></FaArrowTrendDown>{item?.percentageChange} %</h1>
+        <div className="bg-[#6A9AB0] text-center p-5 rounded-lg" key={idx}>
+          <h1 className="text-3xl font-bold flex items-center justify-center gap-2"> <FaArrowTrendDown className="text-orange-700"></FaArrowTrendDown>{item?.percentageChange} %</h1>
           <h3>{item?.type}</h3>
           <div className="flex gap-4 p-4">
           <div>
