@@ -1,17 +1,21 @@
 [
   {
-    "product": "All",
-    "cycleTime": {
-      "value": 8.57,
-      "unit": "mins"
-    },
-    "yield": {
-      "percentage": 99.58
-    },
-    "throughput": {
-      "value": 2176,
-      "unit": "units/hour"
-    },
+    "productCycle": [
+      {
+        "item": "CycleTime",
+        "value": 8.57,
+        "unit": "mins"
+      },
+      {
+        "item": "Yield",
+        "percentage": 99.58
+      },
+      {
+        "item": "Throughput",
+        "value": 2176,
+        "unit": "units/hour"
+      }
+    ],
     "costAnalysis": {
       "timePeriod": "Last 12 Months",
       "data": [
