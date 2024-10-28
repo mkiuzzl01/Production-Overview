@@ -17,13 +17,19 @@ const CostAnalysis = () => {
 
   if (loading) return <Loading></Loading>;
 
+  console.log(costAnalysis);
+
   return (
-    <div className="w-full  h-[225px] shadow-lg shadow-[#3A6D8C] rounded-md p-2 mb-2">
+    <div className="w-full  h-[297px] shadow-md shadow-[#3A6D8C] rounded-md pb-8 px-2">
+      <h1 className="text-center text-white">All Overview of the Production Cost</h1>
       <ResponsiveContainer>
-        <AreaChart data={costAnalysis?.items} margin={{}}>
+        <AreaChart
+          data={costAnalysis?.items}
+          margin={{ top: 10, right: 30, left: 0, bottom: 5 }}
+        >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="month" stroke="#ffff" />
-          <YAxis stroke="#ffff" />
+          <XAxis dataKey="month" stroke="#ffff" tick={{ fill: "#ffff" }} />
+          <YAxis stroke="#ffff" tick={{ fill: "#ffff" }} />
           <Tooltip />
           <Legend align="center" />
           <Area

@@ -27,16 +27,16 @@ const TotalOrders = () => {
       const chartWidth = document.querySelector(".chart").offsetWidth;
       const chartHeight = document.querySelector(".chart").offsetHeight;
       setCenter({
-        cx: chartWidth / 2, // Corrected
-        cy: chartHeight / 2, // Corrected
+        cx: chartWidth / 2, 
+        cy: chartHeight / 2,
       });
     };
-    
+
     handleResize();
     window.addEventListener("resize", handleResize);
-    
+
     return () => {
-      window.removeEventListener("resize", handleResize); // Clean up on unmount
+      window.removeEventListener("resize", handleResize); 
     };
   }, []);
 
@@ -60,19 +60,26 @@ const TotalOrders = () => {
     const yp = y0 + length * sin;
 
     return [
-      <circle key="needle-base" cx={x0} cy={y0} r={r} fill={color} stroke="none" />,
+      <circle
+        key="needle-base"
+        cx={x0}
+        cy={y0}
+        r={r}
+        fill={color}
+        stroke="none"
+      />,
       <path
         key="needle-path"
         d={`M${xba},${yba} L${xbb},${ybb} L${xp},${yp} Z`}
-        stroke="none" // Fixed
-        fill={color} // Use color directly
+        stroke="none" 
+        fill={color} 
       />,
     ];
   };
 
   return (
-    <div className="chart w-full h-48 pt-5">
-      <h1 className="text-center text-white lg:pb-2">Total Orders</h1>
+    <div className="chart w-full h-72 py-10 lg:py-0 ">
+      <h1 className="text-center text-white">Total Orders</h1>
       <ResponsiveContainer>
         <PieChart>
           <Pie
@@ -89,7 +96,10 @@ const TotalOrders = () => {
             nameKey="type"
           >
             {orders.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell
+                key={`cell-${index}`}
+                fill={COLORS[index % COLORS.length]}
+              />
             ))}
           </Pie>
           {needle(value, orders, center.cx, center.cy, iR, oR, "#d0d000")}

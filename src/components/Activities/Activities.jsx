@@ -44,7 +44,7 @@ const Activities = () => {
   };
 
   return (
-    <div className="w-full h-80 lg:h-60 py-8  lg:pb-2 lg:pt-8">
+    <div className="w-full h-80 py-8 lg:py-0">
          <h1 className="text-center text-white">Total Activity</h1>
       <ResponsiveContainer>
         <PieChart>

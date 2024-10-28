@@ -81,9 +81,9 @@
         },
         {
           "month": "Sep 2023",
-          "productionCost": 116.1,
-          "manufacturingCost": 120.88,
-          "laborCost": 26.13
+          "productionCost": 110.35,
+          "manufacturingCost": 116.1,
+          "laborCost": 28.26
         },
         {
           "month": "Oct 2023",
@@ -109,16 +109,16 @@
     ],
 
     "activities": [
-     { "type":"availability","value":55.24},
-     { "type":"performance","value":70.12},
-     { "type":"quality","value":94.46},
-     { "type":"overallEquipmentEffectiveness","value":87.35}
+      { "type": "availability", "value": 55.24 },
+      { "type": "performance", "value": 70.12 },
+      { "type": "quality", "value": 94.46 },
+      { "type": "overallEquipmentEffectiveness", "value": 87.35 }
     ],
-    "orders":[
-      {"type":"running", "value": 67.5},
-      {"type":"pending", "value": 47.5},
-      {"type":"cancel", "value": 30.5},
-      {"type":"rejected", "value": 10.5}
+    "orders": [
+      { "type": "running", "value": 67.5 },
+      { "type": "pending", "value": 47.5 },
+      { "type": "cancel", "value": 30.5 },
+      { "type": "rejected", "value": 10.5 }
     ]
   }
 ]
