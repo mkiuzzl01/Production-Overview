@@ -10,7 +10,7 @@ const Sidebar = () => {
     </>
   );
   return (
-    <div className="bg-[#1E3E62] text-orange-100 min-h-screen p-5">
+    <div className="bg-[#1E3E62] text-orange-100 min-h-screen p-6">
       <div className="text-center py-5">
         <h1 className="text-2xl font-bold text-yellow-300">Excellent Choice</h1>
       </div>

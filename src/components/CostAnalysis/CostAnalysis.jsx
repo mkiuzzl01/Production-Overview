@@ -18,7 +18,7 @@ const CostAnalysis = () => {
   if (loading) return <Loading></Loading>;
 
   return (
-    <div className="w-full  h-[257px] shadow-lg shadow-[#3A6D8C] rounded-md p-2 mb-2">
+    <div className="w-full  h-[225px] shadow-lg shadow-[#3A6D8C] rounded-md p-2 mb-2">
       <ResponsiveContainer>
         <AreaChart data={costAnalysis?.items} margin={{}}>
           <CartesianGrid strokeDasharray="3 3" />

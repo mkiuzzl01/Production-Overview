@@ -14,7 +14,7 @@ const Production_Overview = () => {
       <div>
         <CostAnalysis></CostAnalysis>
       </div>
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-4">
         <div>
           <ProductCycle></ProductCycle>
         </div>
