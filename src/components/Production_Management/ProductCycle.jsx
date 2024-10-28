@@ -6,6 +6,9 @@ const ProductCycle = () => {
   const { productCycle } = useProductions();
   return (
     <div className="pt-5">
+      
+      {/* product cycle card */}
+
       <div className="flex justify-center flex-row lg:flex-col gap-4">
         {productCycle?.map((item, idx) => (
           <div className="bg-red-200 p-2 md:p-5 rounded-md" key={idx}>

@@ -9,6 +9,7 @@ const useProductions = () => {
   const [metrics, setMetrics] = useState([]);
   const [orders, setOrders] = useState([]);
 
+  // console.log(error);
   //get all products data
   const getData = async () => {
     try {

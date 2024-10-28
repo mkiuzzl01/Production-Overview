@@ -8,15 +8,18 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from "recharts";
+import Loading from "../../Shared/Loading";
 
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 const Activities = () => {
   const { metrics, loading } = useProductions();
-  console.log(metrics);
+
+  if (loading) return <Loading></Loading>;
 
   const RADIAN = Math.PI / 180;
 
+  // chart function for label
   const renderCustomizedLabel = ({
     cx,
     cy,
@@ -45,7 +48,7 @@ const Activities = () => {
 
   return (
     <div className="w-full h-80 py-8 lg:py-0">
-         <h1 className="text-center text-white">Total Activity</h1>
+      <h1 className="text-center text-white">Total Activity</h1>
       <ResponsiveContainer>
         <PieChart>
           <Pie

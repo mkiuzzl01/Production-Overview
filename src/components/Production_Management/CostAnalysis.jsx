@@ -15,9 +15,10 @@ import Loading from "../../Shared/Loading";
 const CostAnalysis = () => {
   const { costAnalysis, loading } = useProductions();
 
+  
   if (loading) return <Loading></Loading>;
 
-  console.log(costAnalysis);
+  // console.log(costAnalysis);
 
   return (
     <div className="w-full  h-[297px] shadow-md shadow-[#3A6D8C] rounded-md pb-8 px-2">

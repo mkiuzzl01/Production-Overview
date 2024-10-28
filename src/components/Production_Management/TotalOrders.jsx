@@ -10,24 +10,26 @@ import {
 } from "recharts";
 
 const TotalOrders = () => {
-  const { orders, loading } = useProductions();
+  const { orders} = useProductions();
   const [center, setCenter] = useState({ cx: 0, cy: 0 });
 
-  console.log(orders);
+  // console.log(orders);
 
   const RADIAN = Math.PI / 180;
   const iR = 50;
   const oR = 100;
   const value = 50;
 
+  // colors in chart
   const COLORS = ["#A594F9", "#387478", "#629584", "#CB6040"];
 
+  //use for responsive chart
   useEffect(() => {
     const handleResize = () => {
       const chartWidth = document.querySelector(".chart").offsetWidth;
       const chartHeight = document.querySelector(".chart").offsetHeight;
       setCenter({
-        cx: chartWidth / 2, 
+        cx: chartWidth / 2,
         cy: chartHeight / 2,
       });
     };
@@ -36,10 +38,11 @@ const TotalOrders = () => {
     window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize); 
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+  //function for needle
   const needle = (value, data, cx, cy, iR, oR, color) => {
     let total = 0;
     data.forEach((v) => {
@@ -71,14 +74,14 @@ const TotalOrders = () => {
       <path
         key="needle-path"
         d={`M${xba},${yba} L${xbb},${ybb} L${xp},${yp} Z`}
-        stroke="none" 
-        fill={color} 
+        stroke="none"
+        fill={color}
       />,
     ];
   };
 
   return (
-    <div className="chart w-full h-72 py-10 lg:py-0 ">
+    <div className="chart w-full h-[300px] py-10 lg:py-0 ">
       <h1 className="text-center text-white">Total Orders</h1>
       <ResponsiveContainer>
         <PieChart>

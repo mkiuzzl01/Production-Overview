@@ -13,10 +13,11 @@ const Sidebar = ({ isOpen, toggleMenu }) => {
     >
       <div className="bg-[#1E3E62] text-orange-100 bg-opacity-90 lg:bg-opacity-100 h-screen p-5">
         <h1 className="text-2xl font-bold text-yellow-300 py-5">
-          Excellent Garments{" "}
+          Excellent Garments
         </h1>
         <div>
           <ul onClick={toggleMenu} className="space-y-2">
+            {/* custom menu component */}
             <Menu route="/" routeName="Production Management" icon={<AiFillProduct></AiFillProduct>}></Menu>
           </ul>
         </div>
