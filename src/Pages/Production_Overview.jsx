@@ -1,9 +1,9 @@
 import React from "react";
-import ProductCycle from "../productCycle/productCycle";
-import CostAnalysis from "../CostAnalysis/CostAnalysis";
-import Quantity from "../quantity/Quantity";
-import Activities from "../Activities/Activities";
-import TotalOrders from "../Orders/TotalOrders";
+import ProductCycle from "../components/Production_Management/ProductCycle";
+import CostAnalysis from "../components/Production_Management/CostAnalysis";
+import Quantity from "../components/Production_Management/Quantity";
+import Activities from "../components/Production_Management/Activities";
+import TotalOrders from "../components/Production_Management/TotalOrders";
 
 const Production_Overview = () => {
   return (

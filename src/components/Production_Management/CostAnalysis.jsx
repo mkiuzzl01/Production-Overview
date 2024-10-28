@@ -10,7 +10,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import Loading from "../../util/Loading";
+import Loading from "../../Shared/Loading";
 
 const CostAnalysis = () => {
   const { costAnalysis, loading } = useProductions();
