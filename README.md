@@ -1,8 +1,30 @@
-# React + Vite
+# Project Name: Production Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview : 
+The Production Management page provides a comprehensive view of all production-related metrics and activities, enabling admins or managers to monitor and analyze production performance effectively. This dashboard includes detailed insights into the production cost over the past and current year, production cycle time, and order availability. Key data points are presented through interactive charts and summary cards for quick access and actionable insights. This intuitive and informative interface supports better decision-making.
 
-Currently, two official plugins are available:
+## Features 
+* Cost Analysis: View production costs for the current and past year.
+* Production Cycle Time: Monitor cycle times for efficiency.
+* Order Overview: Track total available and active orders.
+* Interactive Charts: Visualize data trends with charts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Uses Technology:
+
+=> React.js 
+
+=> JavaScript
+
+=> Tailwind.css
+
+=> Rechart
+
+## If you run the project on your local machine follow the steps:
+
+=> Clone the project from this repository
+
+=> Open the project on your IDE
+
+=> Write the command in your Terminal " npm install "
+
+=> then run the project using " npm run dev "
